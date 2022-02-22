@@ -1,34 +1,39 @@
- <mat-toolbar color="primary"> 
- <mat-toolbar-row>
- <button mat-icon-button>
-     <mat-icon (click)="toggleSidebar()">menu</mat-icon>
- </button>
- <span>APP LOAD</span>
- <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
-     <ul fxLayout="row" fxLayoutGap="20px">
-         <li>
-             <button mat-icon-button>
-                 <mat-icon>settings</mat-icon>
-             </button>
-         </li>
-         <li>
-            <button mat-icon-button>
-                <mat-icon>help_outline</mat-icon>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="toggleSidebar()">menu</mat-icon>
+    </button>
+    <span class="titleApp">APP LOAD</span>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <ul fxLayout="row" fxLayoutGap="10px">
+        <li class="hide-icon">
+          <button mat-icon-button>
+            <mat-icon>settings</mat-icon>
+          </button>
+        </li>
+        <li class="hide-icon">
+          <button mat-icon-button>
+            <mat-icon class="helpline">help_outline</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon>person_outline</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              sign out
             </button>
-         </li>
-         <li>
-            <button mat-button [matMenuTriggerFor]="menu"> 
-                <mat-icon>person_outline</mat-icon>
+            <button mat-menu-item class="hide-mat-icon">
+              <mat-icon>settings</mat-icon>Setting
             </button>
-            <mat-menu #menu="matMenu">
-              <button mat-menu-item>
-                  <mat-icon>exit_to_app</mat-icon>
-                  sign out
-              </button>
-            
-            </mat-menu>
-         </li>
-     </ul>
- </div>
+            <button mat-menu-item class="hide-mat-icon">
+              <mat-icon class="helpline">help_outline</mat-icon>Help Line
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>

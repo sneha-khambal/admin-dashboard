@@ -1,4 +1,25 @@
-ul li{
-    list-style: none;
-    
+ul li {
+  list-style: none;
+  list-style-type: none;
+}
+.titleApp {
+  display: block;
+}
+.hide-mat-icon {
+  display: none;
+}
+.hide-icon {
+  display: block;
+}
+@media (max-width: 599px) {
+  .hide-mat-icon {
+    display: block;
+  }
+  .hide-icon {
+    display: none;
+  }
+
+  .titleApp {
+    display: none;
+  }
 }

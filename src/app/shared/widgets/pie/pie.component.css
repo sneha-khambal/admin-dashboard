@@ -1,0 +1,8 @@
+.pie-chart{
+    width: 100%; height: 400px; display: block
+}
+@media (max-width:599px) {
+    .pie-chart{
+      padding: 90px;
+    }
+}

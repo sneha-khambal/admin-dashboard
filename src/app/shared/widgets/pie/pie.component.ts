@@ -19,6 +19,7 @@ export class PieComponent implements OnInit {
           plotBorderWidth: null,
           plotShadow: false,
           type: 'pie'
+         
       },
       title: {
           text: ' RANDOM DATA'

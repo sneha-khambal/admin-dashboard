@@ -8,10 +8,10 @@ import HC_exporting from 'highcharts/modules/exporting';
   styleUrls: ['./area.component.css']
 })
 export class AreaComponent implements OnInit {
-  chartOptions={ };
+  chartOptions={};
   Highcharts =Highcharts;
- @Input() data=[]
-  constructor() { }
+ @Input() data=[];
+ 
 
   ngOnInit(): void {
     this.chartOptions={
@@ -39,11 +39,7 @@ export class AreaComponent implements OnInit {
 
       HC_exporting(Highcharts);
 
-      setTimeout(() => {
-        window.dispatchEvent 
-          (new Event('resize'))
-        
-      },300);
+      setTimeout(() => {  window.dispatchEvent (new Event('resize')) },300);
   }
 
 }
