@@ -1,0 +1,25 @@
+/* .example-container {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    height: 500px;
+    background: rgb(155, 184, 26);
+    } */
+    :host{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    mat-drawer{
+       width: 250px; }
+       
+    mat-drawer-container{
+        height: 100%;
+       
+    }
+    mat-drawer-content{
+        padding: 40px;
+      
+    }
