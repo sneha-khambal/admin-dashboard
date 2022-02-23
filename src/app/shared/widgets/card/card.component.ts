@@ -14,7 +14,7 @@ export class CardComponent implements OnInit {
   @Input() total!:string;
   @Input() percentage!:string;
   @Input()data=[]
-  constructor() { }
+ 
 
   ngOnInit(): void {
     this.chartOptions={
